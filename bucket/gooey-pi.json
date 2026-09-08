@@ -1,0 +1,36 @@
+{
+    "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+    "version": "1.1.16",
+    "description": "Desktop workspace for the Pi, OMP, and Prime Agent coding harnesses.",
+    "homepage": "https://github.com/am-will/gooey-pi",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/am-will/gooey-pi/releases/download/v1.1.16/GooeyPi-1.1.16-win-x64.zip",
+            "hash": "72ff097b1129f80d49353519506cbcb8cd8ff4031fa5c45fe086c5b99e5d0d96"
+        }
+    },
+    "bin": "GooeyPi.exe",
+    "shortcuts": [
+        [
+            "GooeyPi.exe",
+            "GooeyPi"
+        ]
+    ],
+    "notes": [
+        "GooeyPi is only the UI: install Pi, OMP, or Prime Agent separately and",
+        "sign in to a provider through that harness's own CLI first.",
+        "Windows builds are unsigned beta artifacts, so SmartScreen may warn.",
+        "After a new release, update this manifest and run: scoop update gooey-pi"
+    ],
+    "checkver": {
+        "github": "https://github.com/am-will/gooey-pi"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/am-will/gooey-pi/releases/download/v$version/GooeyPi-$version-win-x64.zip"
+            }
+        }
+    }
+}
