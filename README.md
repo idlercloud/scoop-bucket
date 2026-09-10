@@ -16,4 +16,4 @@ scoop update <app>    # upgrade an app
 
 | App | Version |
 | --- | --- |
-| [gooey-pi](https://github.com/am-will/gooey-pi) | 1.1.16 |
+| [gooey-pi](https://github.com/am-will/gooey-pi) | latest |
